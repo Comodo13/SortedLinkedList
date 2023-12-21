@@ -26,7 +26,7 @@ I added some methods from other collections I use pretty often such as `size()`,
 
 ## Optimization Considerations
 
-- **Thread Safety**: For thread safety, you can use locks by making `insert` and `delete` synchronized. However, this might impact overall performance. Consider making a separate concurrent version of the library.
+- **Thread Safety**: For thread safety, I was thinking to make `insert` and `delete` synchronized. However, this might impact overall performance. Considering to make a separate concurrent version of the library.
 
 - **Double LinkedList**: I considered making the linked list double to make deletions more efficient. However, this would consume more space due to the additional link.
 
