@@ -1,14 +1,4 @@
-/**
- * I added some methods from other collections I use pretty often such as: size(), contains(), isEmpty(), search(T data), clear().
- *
- *
- *
- * Optimization considerations:
- * For tread safety I would use locks by making insert and delete synchronized. But it will lower overall performance, so I would make separate concurrent version of my library.
- * I was thinking to make LInkedList double, to make deletions more efficient, but it would take much more space to store because of additional link.
- * I just added tail reference maintaining. So in case of inserting the new smallest or the biggest number, operation will have only O(1) complexity.
- *
- */
+
 public class SortedLinkedList<T extends Comparable<T>> {
     private Node<T> head;
     private Node<T> tail;
